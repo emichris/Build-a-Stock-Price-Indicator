@@ -1,5 +1,5 @@
 # [Build a Stock Price Indicator](https://emichris-stock-predictor.herokuapp.com/)
-![Header](prediction_engine/static/wallstreet.jpg)
+![Header](./prediction_engine/static/wallstreet.jpg =100x)
 Photo by [Rick Tap](https://unsplash.com/@ricktap?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge) on [Unsplash](https://unsplash.com/)
 
 ### Table of Contents
@@ -42,7 +42,7 @@ $ git clone https://github.com/emichris/Build-a-Stock-Price-Indicator.git
 
 + Create a project environment (Anaconda Env Recommended)
 ```
-$ conda create --name myenv # Assuming Anaconda is installed, See above
+$ conda create --name myenv # Assuming Anaconda is installed
 $ source activate myenv
 ```
 
@@ -56,17 +56,18 @@ $ pip install -r requirements.txt
 $ cd Build-a-Stock-Price-Indicator/prediction_engine
 $ python prediction_engine.py
 ```
-Once the app is running, go to https://:0:0:0:5000 to view the live app. 
+Once the app is running, go to `https://0:0:0:0:5000` to view the live app. 
 
 ### How it works
-Once the app is running, enter a valid stock symbol eg AMZN for Amazon, TSLA for Tesla; you can include a start and end date, if start and end dates are not provided, the model defaults to historical data from 1/1/2015 to 1/1/2020 to train the model. After the model trained, you can select one or more stocks you entered before and enter a date to get a prediction of their price for that date. Note the query date must be beyond the end date used to train the model. 
+Once the app is running, enter a valid stock symbol eg AMZN for Amazon, TSLA for Tesla; you can include a start and end date, if start and end dates are not provided, the model defaults to historical data from `1/1/2015 to 1/1/2020` to train the model. After the model trained, you can select one or more stocks you entered before and enter a date to get a prediction of their price for that date. Note the query date must be beyond the end date used to train the model. 
 
 
 ## Results<a name="results"></a>
-The application was tested [here](https://github.com/emichris/Build-a-Stock-Price-Indicator/blob/master/stock_price_prediction.ipynb) using the following stocks, `GOOG, TSLA, AMZN` from 1/1/2010 to 1/1/2020 with a split of 80% training, 20% testing. K nearest neighbor outperformed linear regression receiving `r2 scores` of `0.97, 0.95, and 0.95` respectively. A modified version of Linear regression which uses only `N` number of points in the history for fitting the model as opposed to use all the historical was implemented [here](https://github.com/emichris/Build-a-Stock-Price-Indicator/blob/master/predicting_stock_price(with%20n-historical%20data).ipynb); although, the model performed significantly better than the traditional linear regression, the methodology is difficult to apply on predicting long distance futures that are longer than `N`. 
+The application was tested [here](https://github.com/emichris/Build-a-Stock-Price-Indicator/blob/master/stock_price_prediction.ipynb) using the following stocks, `GOOG, TSLA, AMZN` from `1/1/2010` to `1/1/2020` with a split of 80% training, 20% testing. K nearest neighbor outperformed linear regression receiving `r2 scores` of `0.97, 0.95, and 0.95` respectively. A modified version of Linear regression which uses only `N` number of points in the history for fitting the model as opposed to use all the historical was implemented [here](https://github.com/emichris/Build-a-Stock-Price-Indicator/blob/master/predicting_stock_price(with%20n-historical%20data).ipynb); although, the model performed significantly better than the traditional linear regression, the methodology is difficult to apply on predicting long distance futures that are longer than `N`. 
 
 
 ## Licensing & Acknowledgements<a name="licensing"></a>
 
-I want to thank [Udacity](https://udacity.com) for the opportunity to work on this project as part of my [Data Science Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). MIT Standard License applies. <br>
-[Follow Christia Emiyah on LinkedIn](https://www.linkedin.com/in/christian-emiyah/)
+- MIT Standard License applies. 
+- [Follow Christia Emiyah on LinkedIn](https://www.linkedin.com/in/christian-emiyah/)
+-I want to thank [Udacity](https://udacity.com) for the opportunity to work on this project as part of my [Data Science Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). 
