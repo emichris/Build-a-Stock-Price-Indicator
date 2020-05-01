@@ -1,11 +1,11 @@
-# Build a Stock Price Indicator
+# [Build a Stock Price Indicator](https://emichris-stock-predictor.herokuapp.com/)
 ![Header](prediction_engine/static/wallstreet.jpg)
 Photo by [Rick Tap](https://unsplash.com/@ricktap?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge) on [Unsplash](https://unsplash.com/)
 
 ### Table of Contents
 
 1. [Instroduction](#intro)
-2. [Project Descriprtion](#descrption)
+2. [Project Descriprtion](#description)
 3. [File Descriptions](#files)
 4. [Deploying](#deploy)
 4. [Results](#results)
@@ -19,7 +19,7 @@ Investment firms, hedge funds and even individuals have been using financial mod
 
 ## Project Description <a name="description"> </a>
 
-The objective of this project is to build a stock price predictor. A user is able to get stock price predictions after training the model live on historical data. The system uses the 'Adjusted Close Price'.
+The objective of this project is to build a stock price predictor. A user is able to get stock price predictions after training the model live on historical data. The system predicts 'Adjusted Close Price'. The final application is deployed on heroku at [https://emichris-stock-predictor.herokuapp.com/](https://emichris-stock-predictor.herokuapp.com/)
 
 
 ## File Descriptions <a name="files"></a>
