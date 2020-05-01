@@ -1,5 +1,6 @@
 # [Build a Stock Price Indicator](https://emichris-stock-predictor.herokuapp.com/)
-![](prediction_engine/static/wallstreet.jpg =100x50)
+
+<img src="prediction_engine/static/wallstreet.jpg" alt="Wall Street" height="250">
 Photo by [Rick Tap](https://unsplash.com/@ricktap?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge) on [Unsplash](https://unsplash.com/)
 
 ### Table of Contents
