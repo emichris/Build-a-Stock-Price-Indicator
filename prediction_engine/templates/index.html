@@ -1,0 +1,107 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Stock Price Prediction </title>		
+		<!--import script files needed from plotly and bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+	</head>
+
+	<body>
+	
+		<!--navbar links-->     
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		  <div class="col-1">	</div> <!-- Add left margin to navigation bar-->
+		   <a class="navbar-brand" href="http://localhost:5000/">EmiyTech Stock Predictor</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+		  data-target="#navbarTogglerDemo02" 
+		  aria-controls="navbarTogglerDemo02" aria-expanded="false" 
+		  aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" href="http://localhost:5000/">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/christian-emiyah/" 
+					target="blank_">Christian Emiyah</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://github.com/emichris/Build-a-Stock-Price-Indicator"
+				target="blank_">See Project on Github</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://www.udacity.com">Udacity</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>
+			  </li>
+			</ul>
+			<div class="col-1"> </div> <!-- Add right margin to navigation -->
+		  </div>
+		  
+		</nav>
+		
+		<!--middle section-->  
+		<div class="row container-fluid">
+			<!--social media buttons column-->      
+			<div class="col-1 border-right">
+				<div id="follow-me" class="mt-3">
+					<a href="https://www.linkedin.com/in/christian-emiyah/">
+						<img src="../static/linkedinlogo.png" alt="linkedin" class="img-fluid mb-4 ml-2">
+					</a>
+					<a href="http://github.com/emichris">
+						<img src="../static/githublogo.png" alt="github" class="img-fluid ml-2">
+					</a>
+				</div>
+			</div>
+			
+			
+			<!--midle information-->       
+			<div id="middle-info" class="col-10 mt-3 d-flex flex-column">
+
+				<h2 id="tag-line" class='text-center'>Your Stock Price Predictor</h2>
+				<h4 id="tag-line" class="text-muted text-center">Train and predict stock prices</h4>
+				
+				<div class="border-bottom"> </div> 
+								
+				<form action=http://localhost:5000/plot method = "POST" class='mx-auto mt-4'>
+					<div class="form-row mb-3">
+					  <label for="stockname">Enter stock names separated by space or comma</label>
+					  <input type="text" class="form-control" name="stockname" placeholder="GOOG, TSLA" id="stockname" required>
+					</div>
+					<div class="form-row mb-3">
+						<div class="form-group col-md-6 mb-3">
+						  <label for="date1">Start Date (defaults to 01/01/2015)</label>
+						  <input type="date" class="form-control" name="startdate" placeholder="MM/DD/YYYY" id="date1">
+						</div>
+						<div class="form-group col-md-6 mb-3">
+						  <label for="date2">End Date (defaults to today)</label>
+						  <input type="date" class="form-control" name="enddate" max={{endDate}}  placeholder="MM/DD/YYYY" id="date2">
+						</div>
+					</div>
+	
+				  <div class='text-center'> <button class="btn btn-primary btn-lg" type="submit">Submit</button> </div>
+				</form>
+
+				
+			</div>
+			
+			<div class="col-1 border-left">
+			
+			</div>
+			
+			<marquee class="fixed-bottom" style="color: crimson;">Stock values are subject to market risk. Prediction is based on Yahoo Finance Historical Data using K-nearest neigbor.</marquee>
+		</div>
+	</body>
+</html>
