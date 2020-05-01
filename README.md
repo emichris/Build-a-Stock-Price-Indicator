@@ -1,5 +1,5 @@
 # [Build a Stock Price Indicator](https://emichris-stock-predictor.herokuapp.com/)
-![Header](./prediction_engine/static/wallstreet.jpg =100x)
+![](prediction_engine/static/wallstreet.jpg =100x50)
 Photo by [Rick Tap](https://unsplash.com/@ricktap?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge) on [Unsplash](https://unsplash.com/)
 
 ### Table of Contents
@@ -70,4 +70,4 @@ The application was tested [here](https://github.com/emichris/Build-a-Stock-Pric
 
 - MIT Standard License applies. 
 - [Follow Christia Emiyah on LinkedIn](https://www.linkedin.com/in/christian-emiyah/)
--I want to thank [Udacity](https://udacity.com) for the opportunity to work on this project as part of my [Data Science Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). 
+- I want to thank [Udacity](https://udacity.com) for the opportunity to work on this project as part of my [Data Science Nanodegree Program](https://www.udacity.com/course/data-scientist-nanodegree--nd025). 
